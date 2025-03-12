@@ -12,4 +12,4 @@ Fide: Basit, hafif ve çapraz platform bir C dilinde yazılmış IDE. GTK ile ge
 Developing with GTK4
 
 
-for build:  ```  gcc $( pkg-config --cflags gtk4 ) -o fide src/main.c $( pkg-config --libs gtk4 ) ```
+for build:  ```  gcc $( pkg-config --cflags gtk4 ) -o fide main.c $( pkg-config --libs gtk4 ) ```
