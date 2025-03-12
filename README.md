@@ -8,3 +8,8 @@ Türkish
 
 Fide: Basit, hafif ve çapraz platform bir C dilinde yazılmış IDE. GTK ile geliştirilmiş olan Fide, kullanıcı dostu bir arayüzle, yazılım geliştirme sürecini daha verimli hale getirmeyi hedefler. Şu anda temel metin düzenleyicisi özelliklerine sahip olup, ilerleyen zamanlarda daha fazla özellik ve özelleştirme seçenekleri eklenmesi planlanmaktadır. Fide, hem yeni başlayanlar hem de deneyimli geliştiriciler için hızlı ve etkili bir ortam sunmayı amaçlar. Yakında projenin kaynak kodları sizinle.
 
+
+Developing with GTK4
+
+
+for build:  ```  gcc $( pkg-config --cflags gtk4 ) -o fide src/main.c $( pkg-config --libs gtk4 ) ```
