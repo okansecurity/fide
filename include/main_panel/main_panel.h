@@ -7,6 +7,8 @@ void menu_bar(GtkWidget *window) {
 	
     // main grid
     GtkWidget *menu_Bar_Grid = gtk_grid_new();
+
+
     
     // Settings buton ayarları
     //******************************
@@ -84,7 +86,8 @@ void menu_bar(GtkWidget *window) {
     //******************************
 
     // Ana pencereye menü çubuğunu ekle
-    gtk_grid_attach(GTK_GRID(main_grid), menu_Bar_Grid, 0, 0, 1, 1);
+    
+    gtk_grid_attach(GTK_GRID(main_grid), menu_Bar_Grid, 1, 0, 3, 1);
 }
 
 #endif
