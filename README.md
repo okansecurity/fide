@@ -20,4 +20,4 @@ sudo apt install pkg-config
 
 ```
 
-for build:  ```  gcc $( pkg-config --cflags gtk4 ) -o fide main.c $( pkg-config --libs gtk4 ) ```
+for build:  ```  gcc $(pkg-config --cflags gtk4 gtksourceview-5) -o fide main.c $(pkg-config --libs gtk4 gtksourceview-5) ```
