@@ -17,6 +17,7 @@ sudo apt install libgtk-4-dev
 sudo apt install libgdk-4-dev
 sudo apt install gobject-introspection
 sudo apt install pkg-config
+sudo apt-get install libgtksourceview-5-dev
 
 ```
 
