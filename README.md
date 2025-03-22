@@ -21,6 +21,10 @@ sudo apt install pkg-config
 
 ```
 
-for build:  ```  chmod +x build.sh ```
+for build: 
+```
+chmod +x build.sh
+
+./build.sh```
 
 # A project of a person with ADHD.
