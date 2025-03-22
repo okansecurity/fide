@@ -5,7 +5,7 @@ void activate(GtkApplication* app, gpointer user_data) {
     GtkWidget* main_grid = gtk_grid_new();
     gtk_window_set_child(GTK_WINDOW(window), main_grid);
     
-    gtk_window_set_title(GTK_WINDOW(window), "Free Integrated Development Environment");
+    gtk_window_set_title(GTK_WINDOW(window), "Free Integrated Development Environment: A project of a person with ADHD.");
     gtk_window_set_default_size(GTK_WINDOW(window), 800, 600);
     
     GtkWidget* box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
