@@ -3,6 +3,7 @@
 
 #include "file_area.h"
 #include "open_file.h"
+#include "save_file.h"
 
 void file_button(GtkWidget *main_grid, GtkWidget *notebook, GtkWidget *window) {
     GtkWidget *file_button = gtk_menu_button_new();
@@ -13,12 +14,12 @@ void file_button(GtkWidget *main_grid, GtkWidget *notebook, GtkWidget *window) {
     gtk_popover_set_child(GTK_POPOVER(file_menu), file_menu_grid);
 
     GtkWidget *new_file = gtk_button_new_with_label("New File");
-    //g_signal_connect(new_file, "clicked", G_CALLBACK(create_new_tab), notebook);
     
     GtkWidget *open_file = gtk_button_new_with_label("Open File");
     g_signal_connect(open_file, "clicked", G_CALLBACK(open_file_f), notebook);
 
     GtkWidget *save_file = gtk_button_new_with_label("Save File");
+    g_signal_connect(save_file, "clicked", G_CALLBACK(read_text_from_notebook), notebook);
 
     gtk_grid_attach(GTK_GRID(file_menu_grid), new_file, 0, 0, 1, 1);
     gtk_grid_attach(GTK_GRID(file_menu_grid), open_file, 0, 1, 1, 1);
