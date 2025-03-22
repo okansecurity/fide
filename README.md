@@ -25,6 +25,7 @@ for build:
 ```
 chmod +x build.sh
 
-./build.sh```
+./build.sh
+```
 
 # A project of a person with ADHD.
